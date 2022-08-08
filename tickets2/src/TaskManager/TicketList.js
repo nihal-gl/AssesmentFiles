@@ -16,12 +16,12 @@ class TicketList extends React.Component{
        this.setState({sdata:sorteddata})
      }*/
     //open ticket
-    getCompletedItems=()=>{
+    getOpenTickets=()=>{
        const result= this.state.tasks.filter((item)=>item.openstatus===true)
        return result
     }
     //closed tickets
-    getPendingItems=()=>{
+    getClosedTickets=()=>{
         const result= this.state.tasks.filter((item)=>item.openstatus===false)
         return result
      }
@@ -41,10 +41,10 @@ class TicketList extends React.Component{
                 <hr></hr>
                 <div className="row">
                     <div className="col-md-6">
-                    <OpenTickets completedTask={this.getCompletedItems()} changeCompletion={this.changeCompletionStatus}></OpenTickets>
+                    <OpenTickets completedTask={this.getOpenTickets()} changeCompletion={this.changeCompletionStatus}></OpenTickets>
                     </div>
                     <div className="col-md-6">
-                    <ClosedTickets pendingTask={this.getPendingItems()}></ClosedTickets>
+                    <ClosedTickets pendingTask={this.getClosedTickets()}></ClosedTickets>
                     </div>
                 </div>
             </div>
