@@ -1,0 +1,31 @@
+
+.spancol{
+    color:blue;
+}
+.cthead{
+    background-color: lightgreen;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pthead{
+    background-color: rgb(238, 129, 129);
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn{
+    margin:2px;
+}
+
+.cmsg{
+    background-color: red;
+    color: white;
+}
+
+.p1{
+    background-color: orange;
+}
+.p2{
+    background-color: yellow;
+}
